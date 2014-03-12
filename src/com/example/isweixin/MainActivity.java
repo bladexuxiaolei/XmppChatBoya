@@ -3,6 +3,7 @@ import utils.XmppConnection;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,11 +34,12 @@ public class MainActivity extends Activity implements OnViewChangeListener,
 
 	private ListView listview1;
 	private ListView listview2;
-
+	private LinearLayout addfriend;
 	// �Զ���ĵ�������
 	SelectPicPopupWindow menuWindow; // ������
 	SelectAddPopupWindow menuWindow2; // ������
-
+	ArrayList<ContactP> hcList = new ArrayList<ContactP>();
+	ContactAdapter hc;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -48,6 +50,7 @@ public class MainActivity extends Activity implements OnViewChangeListener,
 	private void init() {
 		//登陆
 		XmppConnection.getInstance().login("test1","a");
+		addfriend = (LinearLayout) findViewById(R.id.addfriend);
 		liaotian = (TextView) findViewById(R.id.liaotian);
 		faxian = (TextView) findViewById(R.id.faxian);
 		tongxunlu = (TextView) findViewById(R.id.tongxunlu);
@@ -59,7 +62,7 @@ public class MainActivity extends Activity implements OnViewChangeListener,
 		listview1.setAdapter(ha);
 		listview1.setCacheColorHint(0);
 
-		ContactAdapter hc = new ContactAdapter(this, getContact());
+		hc = new ContactAdapter(this, getContact());
 		listview2.setAdapter(hc);
 		listview2.setCacheColorHint(0);
 
@@ -94,10 +97,35 @@ public class MainActivity extends Activity implements OnViewChangeListener,
 				uploadImage2(MainActivity.this);
 			}
 		});
+		addfriend.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,Addfriend.class);
+				startActivity(intent);
+				
+			}
+		});
 	}
-
+	public void addcontact(String name)
+	{
+		ContactP cc = new ContactP();
+		cc.setTxPath(R.drawable.abc_ab_bottom_solid_dark_holo+"");
+		cc.setName(name);
+		hcList.add(cc);
+		hc.notifyDataSetChanged();
+	}
+	public void removecontact(String name)
+	{
+		ContactP cc = new ContactP();
+		cc.setTxPath(R.drawable.abc_ab_bottom_solid_dark_holo+"");
+		cc.setName(name);
+		hcList.remove(cc);
+		hc.notifyDataSetChanged();
+	}
 	private ArrayList<ContactP> getContact() {
-		ArrayList<ContactP> hcList = new ArrayList<ContactP>();
+		
 		ContactP c0 = new ContactP();
 		c0.setTxPath(R.drawable.bind_mcontact_reco_friends + "");
 		c0.setName("�����");

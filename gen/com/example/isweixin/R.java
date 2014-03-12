@@ -537,49 +537,54 @@ public final class R {
     }
     public static final class id {
         public static final int ScrollLayout=0x7f0b0001;
-        public static final int action_settings=0x7f0b001b;
-        public static final int add=0x7f0b0013;
-        public static final int btn_cancel=0x7f0b0005;
-        public static final int bz=0x7f0b000d;
-        public static final int faxian=0x7f0b0017;
-        public static final int l1=0x7f0b000a;
-        public static final int l2=0x7f0b000b;
-        public static final int lastmsg=0x7f0b000f;
-        public static final int liaotian=0x7f0b0016;
+        public static final int action_settings=0x7f0b001e;
+        public static final int add=0x7f0b0016;
+        public static final int addfriend=0x7f0b000c;
+        public static final int addfriendname=0x7f0b0004;
+        public static final int addfriendresult=0x7f0b0005;
+        public static final int btn_cancel=0x7f0b0007;
+        public static final int bz=0x7f0b0010;
+        public static final int faxian=0x7f0b001a;
+        public static final int l1=0x7f0b000d;
+        public static final int l2=0x7f0b000e;
+        public static final int lastmsg=0x7f0b0012;
+        public static final int liaotian=0x7f0b0019;
         public static final int listView1=0x7f0b0002;
         public static final int listView2=0x7f0b0003;
-        public static final int list_item=0x7f0b0010;
+        public static final int list_item=0x7f0b0013;
         public static final int llayout=0x7f0b0000;
-        public static final int lllayout=0x7f0b0015;
-        public static final int my_bank=0x7f0b0009;
-        public static final int my_collection=0x7f0b0008;
-        public static final int my_photo=0x7f0b0007;
-        public static final int name=0x7f0b000e;
-        public static final int pop_layout=0x7f0b0006;
-        public static final int pop_layout2=0x7f0b0004;
-        public static final int qq_myview=0x7f0b0019;
-        public static final int qq_mywebview=0x7f0b001a;
-        public static final int set=0x7f0b0014;
-        public static final int time=0x7f0b000c;
-        public static final int tongxunlu=0x7f0b0018;
-        public static final int tx1=0x7f0b0011;
-        public static final int tx2=0x7f0b0012;
+        public static final int lllayout=0x7f0b0018;
+        public static final int my_bank=0x7f0b000b;
+        public static final int my_collection=0x7f0b000a;
+        public static final int my_photo=0x7f0b0009;
+        public static final int name=0x7f0b0011;
+        public static final int pop_layout=0x7f0b0008;
+        public static final int pop_layout2=0x7f0b0006;
+        public static final int qq_myview=0x7f0b001c;
+        public static final int qq_mywebview=0x7f0b001d;
+        public static final int set=0x7f0b0017;
+        public static final int time=0x7f0b000f;
+        public static final int tongxunlu=0x7f0b001b;
+        public static final int tx1=0x7f0b0014;
+        public static final int tx2=0x7f0b0015;
     }
     public static final class integer {
         public static final int Server_Port=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int addxml=0x7f030001;
-        public static final int bottomdialog=0x7f030002;
-        public static final int faxian=0x7f030003;
-        public static final int index=0x7f030004;
-        public static final int liaotian=0x7f030005;
-        public static final int listview_item=0x7f030006;
-        public static final int tongxunlu=0x7f030007;
-        public static final int top1=0x7f030008;
-        public static final int top2=0x7f030009;
-        public static final int webview_qq=0x7f03000a;
+        public static final int addfriend=0x7f030001;
+        public static final int addxml=0x7f030002;
+        public static final int arrayadapteritem=0x7f030003;
+        public static final int bottomdialog=0x7f030004;
+        public static final int faxian=0x7f030005;
+        public static final int index=0x7f030006;
+        public static final int liaotian=0x7f030007;
+        public static final int listview_item=0x7f030008;
+        public static final int tongxunlu=0x7f030009;
+        public static final int top1=0x7f03000a;
+        public static final int top2=0x7f03000b;
+        public static final int webview_qq=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;

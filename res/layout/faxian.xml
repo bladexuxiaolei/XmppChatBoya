@@ -102,6 +102,7 @@
 	              android:background="@color/lightgray"
 		          />
 		      <LinearLayout 
+		          android:id="@+id/addfriend"
 		          android:orientation="horizontal" 
 		          android:paddingTop="15dip"
 		          android:paddingBottom="15dip"
@@ -119,7 +120,7 @@
 		              android:layout_width="wrap_content"
 	              	  android:layout_height="fill_parent"
 	              	  android:layout_marginLeft="10dp"
-	              	  android:text="附近的人"
+	              	  android:text="添加好友"
 	              	  android:textSize="15dip"
 	              	  android:gravity="center"
 	              	  android:textColor="@color/black"
